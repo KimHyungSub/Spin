@@ -24,3 +24,25 @@ The tool supports a range of different verification algorithms, including depth-
 breadth-first, parallel/multi-core, bounded depth, bitstate search (using Bloom filter
 theory), partial order reduced, and swarm search (using arbitrarily many cpus).
 
+## Installation (in Ubuntu 20.04)
+
+### Download and install Spin
+```
+git clone https://github.com/nimble-code/Spin
+
+cd Spin
+
+make
+
+sudo apt-get install -y bison
+```
+
+### Add the following two lines at '.bashrc'
+
+export PATH="/home/hskim/Spin/Src:$PATH" <br>
+export PATH="/home/hskim/Spin/optional_gui:$PATH" <br>
+
+```
+vim ~/.bashrc
+./ispin.tcl
+```
